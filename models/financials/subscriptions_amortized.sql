@@ -32,8 +32,8 @@ amortized as (
         grace_period_end,
         months.date_month
 
-    from subscriptions
-    join months
+    from months
+    join subscriptions
         on date_trunc('month', subscriptions.start_date)::date <= months.date_month
         and date_trunc('month', subscriptions.end_date)::date > months.date_month
     where net_amount_paid > 0

@@ -13,10 +13,10 @@ id_map as (
 stitched as (
 
     select
-        snowplow_sessions.*,
-        coalesce(id.user_id, user_snowplow_domain_id) as inferred_user_id
+        s.*,
+        coalesce(id.user_id, s.user_snowplow_domain_id) as inferred_user_id
 
-    from snowplow_sessions as s
+    from snowplow_sessions s
     left outer join id_map as id using (domain_userid)
 
 )

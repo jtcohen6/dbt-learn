@@ -68,8 +68,6 @@ renamed as (
         host_has_profile_pic,
         host_verifications,
         host_neighbourhood,
-        host_picture_url,
-        host_thumbnail_url,
         is_superhost,
         acceptance_rate,
         response_rate,
@@ -78,10 +76,6 @@ renamed as (
         host_location,
         host_name,
         host_url,
-        xl_picture_url,
-        picture_url,
-        medium_url,
-        thumbnail_url,
         house_rules,
         interaction,
         access,
@@ -97,9 +91,7 @@ renamed as (
         url,
         last_review,
         first_review,
-        calendar_last_scraped,
-        host_since,
-        last_scraped
+        host_since
 
     from source
 

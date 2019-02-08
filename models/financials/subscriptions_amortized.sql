@@ -6,7 +6,7 @@ with subscriptions as (
 
 months as (
 
-    select * from {{ref('months')}}
+    select * from {{ref('calendar_months')}}
 
 ),
 

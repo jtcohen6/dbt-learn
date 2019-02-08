@@ -8,7 +8,7 @@ renamed as (
 
     select
 
-        id,
+        id as listing_id,
         host_id,
         review_scores_value,
         review_scores_location,
@@ -91,7 +91,7 @@ renamed as (
         url,
         last_review,
         first_review,
-        host_since,
+        host_since
 
     from source
 

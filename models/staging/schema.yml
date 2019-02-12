@@ -1,0 +1,24 @@
+version: 2
+
+models:
+- name: stg_listing_history
+  description: A table containing historical availability and prices per listing
+  columns:
+  - name: id
+    tests:
+    - unique
+    - not_null
+
+- name: stg_listings
+  columns:
+  - name: listing_id
+    tests:
+    - not_null
+    - unique
+
+- name: stg_reviews
+  columns:
+  - name: reviews_id
+    tests:
+    - not_null
+    - unique

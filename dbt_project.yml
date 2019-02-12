@@ -31,3 +31,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as views (the default). These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
+  dbt_learn:
+    marts:
+      materialized: table

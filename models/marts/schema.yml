@@ -1,0 +1,25 @@
+version: 2
+
+models:
+- name: dim_hosts
+  description: A table all hosts being based off of the listings table
+  columns:
+  - name: host_id
+    tests:
+    - unique
+    - not_null
+
+- name: dim_reviews
+  description: A table all reviewers being based off of the reviews table
+  columns:
+  - name: review_id
+    tests:
+    - not_null
+    - unique
+
+- name: fct_daily_listing_avail
+  columns:
+  - name: id
+    tests:
+    - not_null
+    - unique

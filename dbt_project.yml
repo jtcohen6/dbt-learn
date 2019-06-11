@@ -32,5 +32,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   dbt_learn:
-    marts:
-      materialized: table
+    airbnb:
+      marts:
+        materialized: table
+    financials:
+      enabled: false
+    id_example:
+      enabled: false
+    metrics:
+      enabled: false
